@@ -7,8 +7,8 @@ This GitHub repository includes the code and the re-gridded ROMS driver files us
 ### Table of contents:
 1.	A directory containing the full Matlab and C++ code set used in this analysis: **ECOTRAN_CodeSet** (C++ files include a version compiled for Mac OS and a raw, uncompiled version to allow compiling on other systems)
 2.	A directory containing the excel VisualBasic file (.xlsm) with the mass-balanced Ecopath NCC food web and a .csv file with the full food web parameter set: **NCC_FoodWeb**.
-3.	A directory containing three ROMS-ESM driver files for: ROMS-GFDL, ROMS-HAD, and ROMS-IPSL, on the Northern California Current ECOTRAN spatial grid: **ROMS_driverFiles_NCCgrid**. 
-4.	A directory containing one example year of raw ROMS-ESM output and original ROMS grid information: **Raw_ROMS_driverFiles**. See Pozo Buil et al. (2021) for a full description of the original ROMS product.
+3.	A directory containing one example year of raw ROMS-ESM output and original ROMS grid information: **Raw_ROMS_driverFiles**. See Pozo Buil et al. (2021) for a full description of the ROMS-ESM product.
+4.	A directory containing three ROMS-ESM driver files for: ROMS-GFDL, ROMS-HAD, and ROMS-IPSL, on the Northern California Current ECOTRAN spatial grid: **ROMS_driverFiles_NCCgrid**. 
 
 ### Defining food web parameters
 
