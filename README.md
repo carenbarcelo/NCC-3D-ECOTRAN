@@ -5,12 +5,10 @@ This GitHub repository includes the code and the re-gridded ROMS driver files us
 *Barceló et al. in review, “Non-linear and alternating spatial effects of climate change on the Northern California Current Ecosystem: Insights from an end-to-end ecosystem model”*
 
 ### Table of contents:
-1.	A directory containing the full Matlab and C++ code set used in this analysis: ECOTRAN_CodeSet.zip. (C++ files include a version compiled for Mac OS and a raw, uncompiled version to allow compiling on other systems)
-2.	A directory containing the excel VisualBasic file (.xlsm) with the mass-balanced Ecopath NCC food web and a .csv file with the full food web parameter set: NCC_FoodWeb.zip.
-3.	A directory file containing three ROMS-ESM driver files for: ROMS-GFDL, ROMS-HAD, and ROMS-IPSL, on the Northern California Current ECOTRAN spatial grid: ROMS_driverFiles_NCCgrid.zip. 
-4.	A directory file containing one example year of raw ROMS-ESM output and original ROMS grid information: Raw_ROMS_driverFiles.zip. See Pozo Buil et al. (2021) for a full description of the original ROMS product.
-
-The master Matlab script to run NCC-3D-ECOTRAN is ECOTRANdynamic_NCC_ROMS_08152023.m. The user will need to change file directory calls to the directory structure of their local computer. The main output result of an ECOTRAN simulation is the variable **re_Y** describing the production rate of each functional group within each of 15 geographic sub-regions at each time-step (structured as a 3D matrix: time X group X sub-region).
+1.	A directory containing the full Matlab and C++ code set used in this analysis: **ECOTRAN_CodeSet** (C++ files include a version compiled for Mac OS and a raw, uncompiled version to allow compiling on other systems)
+2.	A directory containing the excel VisualBasic file (.xlsm) with the mass-balanced Ecopath NCC food web and a .csv file with the full food web parameter set: **NCC_FoodWeb**.
+3.	A directory containing three ROMS-ESM driver files for: ROMS-GFDL, ROMS-HAD, and ROMS-IPSL, on the Northern California Current ECOTRAN spatial grid: **ROMS_driverFiles_NCCgrid**. 
+4.	A directory containing one example year of raw ROMS-ESM output and original ROMS grid information: **Raw_ROMS_driverFiles**. See Pozo Buil et al. (2021) for a full description of the original ROMS product.
 
 ### Defining food web parameters
 
@@ -21,7 +19,9 @@ Please see the included Northern California Current food web parameter files, NC
 ### Main script m-file: 
 *ECOTRANdynamic_NCC_08152023*	
 
-This calls all required sub-functions to run a complete simulation.
+* The user will need to change file directory calls to the directory structure of their local computer. 
+* This calls all required sub-functions to run a complete simulation.
+* The main output result of an ECOTRAN simulation is the variable **re_Y** describing the production rate of each functional group within each of 15 geographic sub-regions at each time-step (structured as a 3D matrix: time X group X sub-region).
 
 ### Main script sub-functions:
 | File | Description |
